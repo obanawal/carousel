@@ -1,0 +1,71 @@
+html, body, #container, .carousel {
+  height:100%;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.productCarousal{
+  height: 100%;
+  width: 100%;
+}
+
+.filter{
+  height : 100px;
+  width: 100%;
+  text-align:center;
+}
+
+$theme-blue: #14B6D4;
+
+.image-slide {
+  height: 75%;
+  width: 75%;
+  transition: background-image .3s ease-in-out;
+}
+
+.image-section{
+    height: 70%;
+    width : 100%
+}
+
+.image-side{
+  height: 10em;
+  width: 10em;
+}
+
+.slide-arrow {
+  color: $theme-blue;
+  cursor: pointer;
+  font-size: 2rem;
+  position: fixed;
+  top: 50%;
+}
+
+.slide-arrow.right {
+  right: 1rem;
+}
+
+.slide-arrow.left {
+  left: 1rem;
+}
+
+.title{
+  font-size :40px;
+  font-weight : bold;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.price{
+  font-size :40px;
+  font-weight : bold;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.price::before{
+  content : " ₹"
+}
